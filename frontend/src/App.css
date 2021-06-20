@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+.header {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  background: #fdfdfd;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 1px 5px #0000003b;
+  z-index: 100;
+}
+
+#magic {
+  overflow: hidden;
+  position: relative;
+}
+#magic::after {
+  content: '';
+  height: 585px;
+  width: 1100px;
+  transform: rotateZ(135deg);
+  top: -45%;
+  right: -30%;
+  z-index: -10;
+  color: #02042b;
+  background: #f4f4f4;
+  border-radius: 10px 500px 300px 500px;
+  box-shadow: 5px 5px 50px #cacaca;
+  position: absolute;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carpic {
+  width: inherit;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+.navlink {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.brand {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Viga;
+  font-size: 2rem;
+  color: #033371;
+}
+
+.navlink > li {
+  padding: 0px 10px;
+}
+.navlink > li:nth-last-child(1) {
+  margin-right: 20px;
+}
+
+.navlink a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.banner_left {
+  margin-top: 125px;
+}
+
+.banner_left p {
+  margin: 10px 0px;
+}
+.btn-action {
+  border: none;
+  padding: 10px 30px;
+  background-color: #f24f39;
+  font-size: 18px;
+  border-radius: 50px;
+  margin: 10px 0;
+  color: white;
+  font-weight: 600;
+}
+.btn-action:hover {
+  background: #e93921;
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+.homerow .card {
+  min-height: 280px;
+  box-shadow: 5px 5px 30px rgb(204, 204, 204);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.homerow .card img {
+  height: 90px;
+}
+.homerow .card h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #242424;
+}
+.homerow .card p {
+  font-size: 0.8rem;
+  color: #242424;
+}
+
+.homerow .card:hover {
+  background-color: #fff8f8;
+  scale: 1.08;
+  transform: translateY(5%);
+  transition: transform cubic-bezier(0.45, 0.05, 0.55, 0.95) 500ms;
+  cursor: pointer;
+}
+.login-btn {
+  text-decoration: none;
+  background-color: #02042b;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.login-btn:hover {
+  background: #040851;
+  color: white;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #040851;
+}
+
+.about {
+}
+
+.about .i-row > .icon {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  background: linear-gradient(#ea3c3c, #c81313);
+  border-radius: 12px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  margin: 0 15px;
+}
+
+.about .i-row > h4 {
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.about p {
+  line-height: 35px;
+}
+.about .i-row {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+}
+.about .col-4 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.d-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* login page */
+.login_parent {
+  /* margin-top: -50px; */
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 50px);
+}
+
+.login_left {
+  display: flex;
+  flex-direction: column;
+  flex: 0.6;
+  background: url('./assets/car-wash.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.login_right {
+  display: flex;
+  flex-direction: column;
+  flex: 0.4;
+  align-items: center;
+  padding: 20px;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+label {
+  font-size: 0.85rem;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  color: #353535;
+}
+.textfield {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #353535;
+}
+.login_inside {
+  min-width: 350px;
+  margin: 30px;
+}
+
+.login_inside h3 {
+  margin-bottom: 30px;
+  color: #353535;
+}
+
+.login_inside > .form > button {
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  background-color: #f24f39;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login_inside i {
+  margin: 0px 10px;
+}
+
+.login_inside > .form > button:hover {
+  background-color: #e93921;
+}
+
+.login_inside .info {
+  color: #353535;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+.login_inside .info a {
+  color: #f24f39;
+  text-decoration: none;
+}
+
+.login_inside .forgotpass {
+  color: #353535;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: right;
+}
+.login_inside .forgotpass a {
+  color: #f24f39;
+  text-decoration: none;
+}
+
+/* login page end */
+
+/* avatar menu */
+
+.userbadge {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.userbadge .myuser > h6,
+.userbadge .myuser > p {
+  margin: 0px;
+  padding: 0px;
+}
+.userbadge .myuser > p {
+  font-size: 0.7rem;
+}
+.userbadge .myuser > h6 {
+  font-size: 0.9rem;
+}
+.userwithDrop {
+  position: relative;
+  z-index: 1000;
+}
+.userwithDrop:hover .user-dropdown {
+  visibility: visible;
+}
+.user-dropdown {
+  position: absolute;
+  right: 0;
+  padding: 10px 0px;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0px 0px 10px #00000010;
+  visibility: hidden;
+  min-width: 150px;
+  justify-content: center;
+  display: flex;
+}
+.user-dropdown .drop-li {
+  list-style: none;
+  margin: 0;
+}
+.drop-li li > i,
+.drop-li li a {
+  color: #6f6f6f;
+}
+.drop-li li {
+  cursor: pointer;
+  margin: 6px 0;
+}
+.drop-li li span:hover {
+  color: #2c2c2d;
+}
+.drop-li > li > span,
+.drop-li li a > span {
+  color: #5e5e5e;
+  font-size: 0.9rem;
+  margin: 10px 5px;
+  font-weight: 500;
+}
+
+/* avatar menu end */
+
+/* Success Page */
+#success {
+  background: aliceblue;
+  min-height: calc(100vh - 50px);
+}
+#success .card {
+  margin-top: 50px;
+  padding: 30px 20px;
+}
+
+#success .woho {
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 0px 0px 10px #f9f5f54d;
+  color: #303030;
+}
+
+#success h2 {
+  font-weight: 800;
+  text-shadow: 0px 0px 10px #f9f5f54d;
+  color: #303030;
+}
+
+/* Success Page END*/

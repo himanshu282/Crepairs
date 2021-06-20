@@ -1,0 +1,205 @@
+.profile_menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.profile_menu ul {
+  width: min-content;
+  list-style: none;
+}
+.hr-custom {
+  width: 100%;
+  border: 1px solid rgba(155, 155, 155, 0.2);
+  border-radius: 500px;
+}
+
+.btn.profile-btn {
+  box-shadow: 0px 2px 10px rgb(213, 213, 213) !important;
+  margin: 0 10px;
+  border: 1px solid rgb(204, 204, 204);
+  min-width: 100px;
+}
+
+.bg-light {
+  background-color: 0px 0px 10px rgb(170, 169, 169) !important;
+  min-height: calc(100vh - 50px);
+}
+.bg-graid {
+  background: linear-gradient(#3168bd 20%, #f7f7f7 0%) !important;
+  min-height: calc(100vh - 50px);
+}
+
+.backgrad {
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: linear-gradient(#3e85a4, #37599b);
+  min-height: 300px;
+  z-index: 0;
+  display: flex;
+  flex-direction: revert;
+  width: 100%;
+}
+
+.profile_menu li {
+  min-width: 180px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 10px 0;
+  padding: 5px 20px;
+  border-radius: 50px;
+  color: #eee;
+  cursor: pointer;
+}
+.profile_menu a.active > li,
+.profile_menu li:hover {
+  background: #e3e3e3;
+  border-radius: 50px;
+  color: #39689e;
+}
+
+.profilecard {
+  border: 1px solid #00000026;
+  border-radius: 20px;
+}
+
+.profile-btn.upload {
+  color: rgb(43, 107, 226);
+  font-weight: 600;
+}
+
+.profile_pic {
+  position: relative;
+}
+
+.selectPic {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  box-shadow: 0px 0px 2px rgba(6, 6, 6, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
+#dp {
+  display: none;
+}
+
+/* Booking Card Style */
+.iconset {
+  display: flex;
+}
+.iconset i {
+  margin: 0px 5px;
+}
+.iconset p {
+  margin-right: 15px;
+  margin-bottom: 0px;
+}
+
+.iconset h6 {
+  margin: 0;
+}
+hr.light {
+  margin: 2px;
+  border: 1px solid #b7b6b6;
+  width: 100%;
+}
+.minfo {
+  color: #104dc1;
+  padding: 10px 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.icon {
+  justify-content: end;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  margin: auto;
+}
+
+.icon > img {
+  width: 80px;
+  background: #e6faff;
+  padding: 10px;
+  box-shadow: 0px 0px 5px #080e1340;
+  border-radius: 5px;
+}
+
+.bookfoot p {
+  color: #303030;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+/* Booking Card Style END */
+
+/* book card new */
+.booking_card {
+  background: #f0f9fb;
+  border: 1px solid #dbd2d2;
+  border-radius: 5px;
+  margin: 0;
+}
+.booking_card .d-col {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+
+.booking_card .irow > i {
+  align-self: center;
+}
+
+.booking_card .irow > p {
+  margin-left: 5px;
+  margin-right: 20px;
+  font-size: 1rem;
+}
+
+.booking_card .icon_contain {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.booking_card span.title {
+  color: #666;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.booking_card p {
+  color: #303030;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.buttonView {
+  color: #fff;
+  font-size: 1rem;
+  padding: 2px 35px;
+  font-weight: 400;
+  background-color: #2991b0;
+  margin: 5px;
+}
+.buttonView:hover {
+  color: white;
+  background: #237f9b;
+}
+
+.booking_card hr.light {
+  border: 1px solid rgb(210, 210, 210);
+  margin: 5px 0;
+}
+
+.booking_card .price {
+  font-size: 1.1rem;
+}
